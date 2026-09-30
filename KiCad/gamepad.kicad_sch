@@ -3451,6 +3451,12 @@
 		(uuid "7085579a-99b1-4d0b-bc06-2787d47b06ef")
 	)
 	(junction
+		(at 29.21 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7106cb5a-d3e7-450f-8f81-ef7ed8f64c61")
+	)
+	(junction
 		(at 73.66 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3505,12 +3511,16 @@
 		(uuid "f7d830d7-64e9-4567-8ceb-4310bf6066bc")
 	)
 	(no_connect
+		(at 30.48 101.6)
+		(uuid "0a649f13-308a-44d5-a87b-d49e0a8e533f")
+	)
+	(no_connect
 		(at 50.8 99.06)
 		(uuid "61cb7f95-73fe-4c17-86cf-d69045a29538")
 	)
 	(no_connect
-		(at 30.48 99.06)
-		(uuid "6e9379ae-6959-4326-87f1-10232792e284")
+		(at 30.48 106.68)
+		(uuid "854411cc-6926-48a5-b1ed-dbf1c7649571")
 	)
 	(no_connect
 		(at 35.56 41.91)
@@ -3549,6 +3559,16 @@
 			(type default)
 		)
 		(uuid "09ddd7d2-bf6b-496f-b8b3-e6be8a279fb4")
+	)
+	(wire
+		(pts
+			(xy 25.4 60.96) (xy 29.21 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0de3074c-04d4-4a02-a8db-d50609a7ed6a")
 	)
 	(wire
 		(pts
@@ -3802,6 +3822,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 60.96) (xy 36.83 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "694568a0-9f15-414a-b4f4-dc9a87fb5501")
+	)
+	(wire
+		(pts
 			(xy 40.64 81.28) (xy 40.64 86.36)
 		)
 		(stroke
@@ -3809,16 +3839,6 @@
 			(type default)
 		)
 		(uuid "699ee2cf-054b-4fa0-8b62-308ff8917fd9")
-	)
-	(wire
-		(pts
-			(xy 25.4 58.42) (xy 36.83 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c503bcc-4773-4e27-b809-6850c4409c92")
 	)
 	(wire
 		(pts
@@ -3979,16 +3999,6 @@
 			(type default)
 		)
 		(uuid "b677d9d1-0989-4bee-b724-ffd2ddc655ab")
-	)
-	(wire
-		(pts
-			(xy 29.21 60.96) (xy 36.83 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7ac774b-3aa0-4d8b-ae28-3b3bd92275ac")
 	)
 	(wire
 		(pts
@@ -4160,13 +4170,13 @@
 		)
 		(uuid "1ed69904-30fd-4b26-92d3-6f7f2c0369a9")
 	)
-	(label "FLS_VDD"
-		(at 29.21 60.96 0)
+	(label "FLASH_VDD"
+		(at 34.29 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "2a226026-0b64-4518-8ad8-a1dd820c0e31")
 	)
@@ -4226,7 +4236,7 @@
 	)
 	(global_label "Button_X"
 		(shape input)
-		(at 50.8 104.14 0)
+		(at 50.8 109.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4236,7 +4246,7 @@
 		)
 		(uuid "227b2073-3426-41c1-a9ed-1d05954e082f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.1307 104.14 0)
+			(at 62.1307 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4346,7 +4356,7 @@
 	)
 	(global_label "Button_Start"
 		(shape input)
-		(at 30.48 111.76 180)
+		(at 30.48 116.84 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4356,7 +4366,7 @@
 		)
 		(uuid "369d06f1-81cf-416b-afa4-8262b9efa509")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 15.7627 111.76 0)
+			(at 15.7627 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4418,7 +4428,7 @@
 	)
 	(global_label "Button_B"
 		(shape input)
-		(at 30.48 114.3 180)
+		(at 30.48 111.76 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4428,7 +4438,7 @@
 		)
 		(uuid "643af2c0-7aca-4a9d-a63b-8df5dbf78ffc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.0888 114.3 0)
+			(at 19.0888 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4610,7 +4620,7 @@
 	)
 	(global_label "Button_A"
 		(shape input)
-		(at 30.48 116.84 180)
+		(at 30.48 114.3 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4620,7 +4630,7 @@
 		)
 		(uuid "c5989acc-8882-4c88-94b6-d75446fa0453")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.2702 116.84 0)
+			(at 19.2702 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4634,17 +4644,17 @@
 	)
 	(global_label "Analog_X"
 		(shape input)
-		(at 30.48 109.22 180)
+		(at 50.8 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "c694a359-078b-4b4e-b068-1295fa96b9a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 18.9679 109.22 0)
+			(at 62.3121 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4652,23 +4662,23 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 	)
 	(global_label "Button_SR"
 		(shape input)
-		(at 30.48 106.68 180)
+		(at 50.8 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "c964eea3-c54a-451d-9db4-3b2b8a63bd36")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 17.8793 106.68 0)
+			(at 63.4007 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4676,13 +4686,13 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 	)
 	(global_label "Button_SL"
 		(shape input)
-		(at 30.48 101.6 180)
+		(at 30.48 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4692,7 +4702,7 @@
 		)
 		(uuid "cdbc593b-a399-4307-9dac-f763180c4cae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 18.1212 101.6 0)
+			(at 18.1212 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4802,17 +4812,17 @@
 	)
 	(global_label "Analog_Y"
 		(shape input)
-		(at 50.8 109.22 0)
+		(at 30.48 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "f6ad40e9-57fa-4995-9be1-fbda5779c62e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.1912 109.22 0)
+			(at 19.0888 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4820,7 +4830,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
@@ -4907,85 +4917,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 54.61 116.84 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0633256a-e373-4452-9892-ddf54c96838e")
-		(property "Reference" "R4"
-			(at 55.88 119.126 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10K"
-			(at 54.61 116.84 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 54.61 118.618 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 54.61 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "95d0d066-72e1-4ce4-8481-28ec90129fd5")
-		)
-		(pin "1"
-			(uuid "8f341927-eecd-4a59-9e70-f6d94512ac02")
-		)
-		(instances
-			(project "gamepad"
-				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 93.98 107.95 0)
 		(unit 1)
@@ -5016,7 +4947,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 93.98 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -5694,6 +5625,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 25.4 60.96 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2608af23-1d07-4f4a-9b29-ba62c6916359")
+		(property "Reference" "#PWR026"
+			(at 25.4 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 25.4 64.516 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 25.4 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31d3555d-8466-4ebf-ba1e-d62571621323")
+		)
+		(instances
+			(project "gamepad"
+				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized")
 		(at 44.45 86.36 90)
 		(mirror x)
@@ -6127,7 +6135,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "378db3cc-6d0d-4daf-9cde-7a53cc3427cd")
-		(property "Reference" "R12"
+		(property "Reference" "R11"
 			(at 104.14 114.554 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6189,7 +6197,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R12")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -6206,7 +6214,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3b5e2925-46aa-4f5d-8820-bb29b754b2d3")
-		(property "Reference" "R14"
+		(property "Reference" "R13"
 			(at 104.14 134.874 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6268,7 +6276,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R14")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -6285,7 +6293,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d1de195-63a5-439a-8bf3-e82a058370dd")
-		(property "Reference" "R11"
+		(property "Reference" "R10"
 			(at 104.14 105.664 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6347,7 +6355,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R11")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6443,7 +6451,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3e7623f4-f8ac-4482-a0a1-e57b6ce42661")
-		(property "Reference" "R5"
+		(property "Reference" "R4"
 			(at 71.628 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6505,7 +6513,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R5")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -6542,7 +6550,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 93.98 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -7146,83 +7154,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VDD")
-		(at 58.42 116.84 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "583ba1ec-b2a1-4d7f-90e0-94b9a4ec1154")
-		(property "Reference" "#PWR026"
-			(at 54.61 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD"
-			(at 63.246 117.094 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 58.42 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "25112de8-aa6c-4185-8b21-b6f9b60b4cbb")
-		)
-		(instances
-			(project "gamepad"
-				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 35.56 162.56 0)
 		(unit 1)
@@ -7332,7 +7263,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 			(at 93.98 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -7725,7 +7656,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 93.98 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7784,7 +7715,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "70c14a9a-a04a-47ba-aa4e-27c67c300fa0")
-		(property "Reference" "R8"
+		(property "Reference" "R7"
 			(at 104.14 78.994 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7846,7 +7777,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R8")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7863,7 +7794,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "776042b9-442c-4cd0-b866-f9a38cd5141e")
-		(property "Reference" "R13"
+		(property "Reference" "R12"
 			(at 104.14 124.714 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7925,7 +7856,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R13")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -7942,7 +7873,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77adb187-4467-40fe-b073-69031fbe1d75")
-		(property "Reference" "R7"
+		(property "Reference" "R6"
 			(at 65.278 123.444 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8004,7 +7935,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R7")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -8041,7 +7972,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 93.98 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -8642,7 +8573,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 58.42 270)
+		(at 36.83 58.42 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8653,7 +8584,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab69f73f-7eaf-4c08-85a8-7805157efd4b")
 		(property "Reference" "#PWR09"
-			(at 19.05 58.42 0)
+			(at 30.48 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8664,7 +8595,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 20.32 58.42 0)
+			(at 31.75 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8675,7 +8606,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 58.42 0)
+			(at 36.83 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8686,7 +8617,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 58.42 0)
+			(at 36.83 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8697,7 +8628,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 58.42 0)
+			(at 36.83 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8750,7 +8681,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x02_P4.6mm_D0.9mm_OD2.1mm"
 			(at 93.98 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -8809,7 +8740,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b11f24c2-a430-4a81-88a9-e85c45a4dbd2")
-		(property "Reference" "R9"
+		(property "Reference" "R8"
 			(at 104.14 87.884 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8871,7 +8802,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R9")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -9547,7 +9478,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bd678982-cbc8-466a-b9bb-e73bed0c5dad")
-		(property "Reference" "R15"
+		(property "Reference" "R14"
 			(at 49.53 167.386 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9609,7 +9540,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R15")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -9626,7 +9557,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c171d737-8c38-4a2d-98f3-bc4e40c794f2")
-		(property "Reference" "R10"
+		(property "Reference" "R9"
 			(at 104.14 96.774 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9688,7 +9619,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R10")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -9792,8 +9723,8 @@
 				)
 			)
 		)
-		(property "Value" "SL"
-			(at 97.79 135.89 0)
+		(property "Value" "Start"
+			(at 93.98 139.192 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9802,7 +9733,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 93.98 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -10257,7 +10188,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e9aa955c-7024-4fe7-8e1a-1ef4101145dc")
-		(property "Reference" "R6"
+		(property "Reference" "R5"
 			(at 65.024 120.904 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10319,7 +10250,7 @@
 		(instances
 			(project "gamepad"
 				(path "/a79dd762-b53a-4712-ac47-2c1281faf0c5"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
