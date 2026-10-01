@@ -12,15 +12,23 @@ DEPS := $(OBJS:.o=.d)
 
 #compiler variables
 CC := riscv64-elf-gcc
+CXX := riscv64-elf-g++
 CFLAGS := -g -O0 -ffunction-sections -static-libgcc\
 		  -lgcc -march=rv32ec_zicsr -mabi=ilp32e\
 		  -nostdlib -I. -Wall -MMD -MP
 
+build/firmware.bin: build/firmware.elf
+	@riscv64-elf-size build/firmware.elf
+	@riscv64-elf-objdump -S build/firmware.elf > build/firmware.lst
+	@riscv64-elf-objdump -t build/firmware.elf > build/firmware.map
+	@riscv64-elf-objcopy -O binary build/firmware.elf build/firmware.bin
+	@riscv64-elf-objcopy -O ihex build/firmware.elf build/firmware.hex
+	@cd build && xxd -i firmware.bin > firmware.h
+
 build/firmware.elf: $(OBJS) build/generated_ch32v003.ld
 	@echo "Linking OBJ"
-	@$(CC) $(CFLAGS) -T build/generated_ch32v003.ld -Wl,--gc-sections -L. -o $@ $(OBJS) $(LDFLAGS)
+	@$(CXX) $(CFLAGS) -T build/generated_ch32v003.ld -Wl,--gc-sections -L. -o $@ $(OBJS) $(LDFLAGS)
 
-#build obj
 build/%.c.o : %.c
 	@echo "Compiling sourcefiles"
 	@mkdir -p $(dir $@)
